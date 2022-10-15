@@ -1,1 +1,1 @@
-# CNN-frontend
+# gxn-frontend
