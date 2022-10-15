@@ -1,8 +1,7 @@
-import { ScrollView, Text, View, StyleSheet } from "react-native";
+import { ScrollView, Text, View, StyleSheet, Image } from "react-native";
 import { Colors } from "../../../assets/color/Colors";
 import { FontSizes } from "../../../assets/font/Font";
-import ButtonBox from "./ButtonBox";
-import ImageDiscover from './ImageDiscover'
+
 
 
 const HomePage = ({ navigation }) => {
@@ -13,11 +12,20 @@ const HomePage = ({ navigation }) => {
         NỀN TẢNG ĐI NHỜ XE MÁY
         </Text>
       </View>
-      <Text style={[style.title, { marginTop: 55, fontWeight: "700" }]}>
-      Con muốn lên thực đơn như thế nào nè ?
+      <Text style={[style.title, { marginVertical: 35, fontWeight: "700" }]}>
+      Chào mừng bạn đến với ứng dụng ĐI NHỜ NHA
       </Text>
-     
-      
+
+      <Image
+        style={{ width: '100%', flex: 1 }}
+        source={require("../../../assets/images/banner.png")}
+        />
+        <View style={{marginVertical:20}}></View>
+      <Image
+        style={{ width: '100%', flex: 1 }}
+        source={require("../../../assets/images/about.png")}
+        />
+        <View style={{marginVertical:20}}></View>
     </ScrollView>
   );
 };
